@@ -170,7 +170,7 @@
     text-decoration: underline;
     color: #3A5CFF;
   }
-  @media (max-width: 410px) and (min-width: 320px) {
+  @media (max-width: 410px) and (min-width: 210px) {
     .left{
       display: none;
     }
@@ -232,7 +232,7 @@
     margin-left: 70px;
   }
   }
-  @media (max-width: 480px) and (min-width: 381px){
+  @media (max-width: 539px) and (min-width: 381px){
     .left{
       display: none;
     }
@@ -263,7 +263,7 @@
     margin-left: 70px;
   }
   }
-  @media (max-width: 539px) and (min-width: 481px){
+  /* @media (max-width: 539px) and (min-width: 481px){
     .left{
       width: 38vh;
     }
@@ -297,7 +297,7 @@
   .login-button{
     margin-left: 70px;
   }
-  }
+  } */
   @media (max-width: 767px) and (min-width: 540px){
     .left{
       display: none;
@@ -368,14 +368,14 @@
   }
   @media (max-width: 1023px) and (min-width: 912px){
     .left{
-      width: 38vh;
+      width: 45vh;
     }
     .left h1{
       font-size: larger;
     }
     #loginImage{
-      height: 420px;
-      width: 380px;
+      height: 520px;
+      width: 480px;
     }
     #fieldaLogo{
       height: 160px;
@@ -434,5 +434,45 @@
     margin-left: 70px;
   }
 
+  }
+  @media (max-width: 1300px) and (min-width: 1201px){
+
+ .left{
+      width: 70vh;
+    }
+    .left h1{
+      font-size: 28px;
+      margin-top: -50px;
+    }
+    #loginImage{
+      height: 520px;
+      width: 480px;
+      margin-top: -80px;
+      margin-left: 40px;
+    }
+    #fieldaLogo{
+      height: 160px;
+      width: 320px;
+      margin-left: 120px;
+    }
+    .login-form{
+      height: 65vh;
+      width: 50vh;
+      margin-left: 80px;
+      margin-top: 150px;    
+  }
+  #loginText{
+    padding-top: 40px;
+  }
+  #subHeadline{
+    font-size: 12px;
+    padding-bottom: 0px;
+  }
+  #forgotPwd{
+    margin-left: 166px;
+  }
+  .login-button{
+    margin-left: 70px;
+  }
   }
   
