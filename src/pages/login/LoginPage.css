@@ -178,7 +178,7 @@
       background-image: url('../../assets/fielda-logo1.png');
       background-repeat: no-repeat;
       background-size: 220px;
-      background-position: 22% 5%;
+      background-position: 17% 5%;
       
     }
     .login-form{
@@ -209,7 +209,7 @@
       background-image: url('../../assets/fielda-logo1.png');
       background-repeat: no-repeat;
       background-size: 220px;
-      background-position: 22% 5%;
+      background-position: 18% 5%;
       
     }
     .login-form{
@@ -240,7 +240,7 @@
       background-image: url('../../assets/fielda-logo1.png');
       background-repeat: no-repeat;
       background-size: 220px;
-      background-position: 22% 5%;
+      background-position: 16% 5%;
       
     }
     .login-form{
@@ -434,44 +434,5 @@
     margin-left: 70px;
   }
 
-  }
-  @media (max-width: 1300px) and (min-width: 1201px){
-
- .left{
-      width: 90vh;
-    }
-    .left h1{
-      font-size: 28px;
-      margin-top: -50px;
-    }
-    #loginImage{
-      height: 520px;
-      width: 480px;
-      margin-top: -80px;
-      margin-left: 100px;
-    }
-    #fieldaLogo{
-      height: 160px;
-      width: 320px;
-    }
-    .login-form{
-      height: 65vh;
-      width: 50vh;
-      margin-left: 80px;
-      margin-top: 150px;    
-  }
-  #loginText{
-    padding-top: 40px;
-  }
-  #subHeadline{
-    font-size: 12px;
-    padding-bottom: 0px;
-  }
-  #forgotPwd{
-    margin-left: 166px;
-  }
-  .login-button{
-    margin-left: 70px;
-  }
   }
   
