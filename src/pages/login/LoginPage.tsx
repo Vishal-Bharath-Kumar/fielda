@@ -5,6 +5,7 @@ import PasswordStrengthBar from "react-password-strength-bar";
 import fieldaLogo from "../../assets/fielda-logo1.png";
 import loginImage from "../../assets/Vector-Smart-Object.svg";
 import "../login/LoginPage.css";
+import { Slide,toast, ToastContainer } from 'react-toastify';
 
 const LoginPage = () => {
   const [email, setEmail] = useState('');
@@ -13,6 +14,7 @@ const LoginPage = () => {
   const [isPasswordInputFocused, setIsPasswordInputFocused] = useState(false);
   const [emailError, setEmailError] = useState('');
   const [passwordError, setPasswordError] = useState('');
+  const [, setLoginData] = useState({});
 
   const handlePasswordToggle = () => {
     setShowPassword(!showPassword);
@@ -45,7 +47,39 @@ const LoginPage = () => {
       setPasswordError('');
     }
     if (!emailError && !passwordError) {
-      console.log('Form submitted:', { email, password });
+      const loginuser = {
+        email: email,
+        password: password,
+      }
+      console.log(loginuser)
+      fetch(`https://staging3.api-next.fielda.com/v1/user/login/`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(loginuser),
+      })
+      .then(response => {
+        if (!response.ok) {
+          throw new Error("Login failed");
+
+
+        }
+        return response.json();
+      })
+      .then(data => {
+        console.log("Login successfully");
+        setLoginData(data);
+        console.log(data);
+        toast.success('LoggedIn Successfully');
+        sessionStorage.setItem('email', data.email);
+        sessionStorage.setItem('token', data.token);
+        window.location.href = '/Dashboard';
+      })
+      .catch(error => {
+        toast.error("Invalid Credentials");
+        console.error("login error in:", error);
+      })
     }
   };
   return (
@@ -108,6 +142,7 @@ const LoginPage = () => {
             </p>
           </div>
         </div>
+        <ToastContainer transition={Slide}/>
       </div>
     </>
   );

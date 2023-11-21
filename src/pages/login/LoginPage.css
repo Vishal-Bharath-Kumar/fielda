@@ -12,9 +12,11 @@
     font-family: Quicksand;
     font-size: 30px;
     font-weight: 700;
+    margin-left: 80px;
 }
 #fieldaLogo{
     margin-top: 40px;
+    margin-left: 220px;
 }
 #loginImage{
     margin-top: 70px;
@@ -123,7 +125,7 @@
     cursor: pointer;
   }
   #forgotPwd{
-    margin-left: -100px;
+    margin-left: 166px;
     cursor: pointer;
   }
   #forgotPwd:hover{
@@ -143,7 +145,7 @@
     cursor: pointer;
     margin-top: 20px;
     margin-bottom: 10px;
-    margin-left: -240px;
+    margin-left: 70px;
   }
   .login-button:hover {
     background-color: #2697FF;
@@ -190,13 +192,13 @@
     padding-bottom: 0px;
   }
   #forgotPwd{
-    margin-left: -40px;
+    margin-left: 166px;
   }
   .login-button{
-    margin-left: -180px;
+    margin-left: 70px;
   }
   }
-  @media (max-width: 380px) and (min-width: 410px){
+  @media (max-width: 410px) and (min-width: 380px){
     .left{
       display: none;
     }
@@ -221,10 +223,10 @@
     padding-bottom: 0px;
   }
   #forgotPwd{
-    margin-left: -220px;
+    margin-left: 166px;
   }
   .login-button{
-    margin-left: -360px;
+    margin-left: 70px;
   }
   }
   @media (max-width: 480px) and (min-width: 381px){
@@ -252,10 +254,10 @@
     padding-bottom: 0px;
   }
   #forgotPwd{
-    margin-left: -220px;
+    margin-left: 166px;
   }
   .login-button{
-    margin-left: -360px;
+    margin-left: 70px;
   }
   }
   @media (max-width: 539px) and (min-width: 481px){
@@ -287,10 +289,10 @@
     padding-bottom: 0px;
   }
   #forgotPwd{
-    margin-left: -40px;
+    margin-left: 166px;
   }
   .login-button{
-    margin-left: -190px;
+    margin-left: 70px;
   }
   }
   @media (max-width: 767px) and (min-width: 540px){
@@ -318,10 +320,10 @@
     padding-bottom: 0px;
   }
   #forgotPwd{
-    margin-left: -100px;
+    margin-left: 166px;
   }
   .login-button{
-    margin-left: -280px;
+    margin-left: 70px;
   }
   }
   @media (max-width: 911px) and (min-width: 768px){
@@ -338,6 +340,7 @@
     #fieldaLogo{
       height: 160px;
       width: 320px;
+      margin-left: 30px;
     }
     .login-form{
       height: 65vh;
@@ -353,10 +356,10 @@
     padding-bottom: 0px;
   }
   #forgotPwd{
-    margin-left: -120px;
+    margin-left: 166px;
   }
   .login-button{
-    margin-left: -250px;
+    margin-left: 70px;
   }
 
   }
@@ -374,11 +377,12 @@
     #fieldaLogo{
       height: 160px;
       width: 320px;
+      margin-left: 80px;
     }
     .login-form{
       height: 65vh;
       width: 50vh;
-      margin-left: 60px;
+      margin-left: 40px;
       margin-top: 220px;    
   }
   #loginText{
@@ -389,33 +393,29 @@
     padding-bottom: 0px;
   }
   #forgotPwd{
-    margin-left: -220px;
+    margin-left: 166px;
   }
   .login-button{
-    margin-left: -370px;
+    margin-left: 70px;
   }
 
   }
   @media (max-width: 1200px) and (min-width: 1024px){
     .left{
-      width: 40vh;
+      display: none;
     }
-    .left h1{
-      font-size: larger;
-    }
-    #loginImage{
-      height: 420px;
-      width: 380px;
-    }
-    #fieldaLogo{
-      height: 160px;
-      width: 320px;
+    .right{
+      background-image: url('../../assets/fielda-logo1.png');
+      background-repeat: no-repeat;
+      background-size: 220px;
+      background-position: 16% 5%;
+      
     }
     .login-form{
       height: 65vh;
-      width: 50vh;
-      margin-left: 50px;
-      margin-top: 220px;    
+      width: 100vh;
+      margin-left: 70px;
+      margin-top: 90px;    
   }
   #loginText{
     padding-top: 40px;
@@ -425,24 +425,27 @@
     padding-bottom: 0px;
   }
   #forgotPwd{
-    margin-left: -220px;
+    margin-left: 166px;
   }
   .login-button{
-    margin-left: -340px;
+    margin-left: 70px;
   }
 
   }
   @media (max-width: 1300px) and (min-width: 1201px){
 
  .left{
-      width: 40vh;
+      width: 90vh;
     }
     .left h1{
-      font-size: 16px;
+      font-size: 28px;
+      margin-top: -50px;
     }
     #loginImage{
-      height: 320px;
-      width: 280px;
+      height: 520px;
+      width: 480px;
+      margin-top: -80px;
+      margin-left: 100px;
     }
     #fieldaLogo{
       height: 160px;
@@ -451,8 +454,8 @@
     .login-form{
       height: 65vh;
       width: 50vh;
-      margin-left: 20px;
-      margin-top: 220px;    
+      margin-left: 80px;
+      margin-top: 150px;    
   }
   #loginText{
     padding-top: 40px;
@@ -462,10 +465,10 @@
     padding-bottom: 0px;
   }
   #forgotPwd{
-    margin-left: 70px;
+    margin-left: 166px;
   }
   .login-button{
-    margin-left: -80px;
+    margin-left: 70px;
   }
   }
   
