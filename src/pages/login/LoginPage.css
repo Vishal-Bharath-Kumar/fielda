@@ -32,7 +32,7 @@
 .right{
     width: 80vh;
     height: 100vh;
-    background-image: linear-gradient(to right,#ffffff, #f0f2f4,#fefefe,#f4f4f4);
+    background-image: linear-gradient(to right,#ffffff, #ffffff,#ffffff,#ffffff);
 }
 .login-form{
     height: 65vh;
@@ -127,6 +127,7 @@
   #forgotPwd{
     margin-left: 166px;
     cursor: pointer;
+    color: #343333;
   }
   #forgotPwd:hover{
     font-weight: 500;
@@ -156,6 +157,7 @@
     font-size: 20px;
     text-align: left;
     padding-top: 20px;
+    color: #343333;
   }
   #registerPara b{
     cursor: pointer;
